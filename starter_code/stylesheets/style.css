@@ -5,3 +5,73 @@ main-titles dark-grey: #2C303F;
 paragraph grey: #5b5e6d;
 nav grey: #5b5e6d;
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Montserrat:wght@300;400;700&family=Patua+One&family=Rubik:wght@300&family=Sniglet&display=swap');
+
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+    margin: 30px;
+}
+
+/* Navbar */
+nav img {
+    height: 40px;
+}
+
+nav ul {
+    display: none
+}
+
+nav ul li {
+   list-style: none; 
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+header br{
+    display: block;
+    content: "";
+    border-bottom: 10px solid transparent; 
+}
+
+header .signin {
+    display: flex;
+    flex-direction: column;
+}
+
+header .signin input, button {
+    padding: 10px;
+}
+
+header .signin input {
+    font: inherit;
+    margin-bottom: 10px;
+}
+
+header .signin button {
+    background-color: #192592;
+    color: white;
+    border-radius: 5px;
+    font: inherit;
+    border: none;
+}
+
+header .cta {
+    text-align: center;
+}
+
+header img {
+    text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    nav ul {
+        display: block;
+    }
+}
