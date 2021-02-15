@@ -13,6 +13,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     line-height: 25px;
     margin: 30px;
+    color: #5b5e6d;
 }
 
 button {
@@ -29,7 +30,8 @@ button {
 }
 
 .signin input, button {
-    padding: 10px;
+    padding: 20px;
+    flex-basis: 90%;
 }
 
 .signin input {
@@ -40,6 +42,14 @@ button {
 .signin button {
     background-color: #192592;
     color: white;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta a {
+    color: #192592;
 }
 
 /* Navbar */
@@ -61,15 +71,10 @@ header {
     flex-direction: column;
 }
 
-header br{
+header br {
     display: block;
     content: "";
     border-bottom: 10px solid transparent; 
-}
-
-
-header .cta {
-    text-align: center;
 }
 
 header img {
@@ -85,20 +90,64 @@ main {
     align-items: center;
 }
 
-main img {
-    max-width: 100px;
-}
-
 main .good-company {
     text-align: center;
 }
 
-main button {
-    width: 95%;
-    color: #192592;
+main .images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .images img {
+    max-width: 50%;
+    flex-basis: 100%;
+    margin: 40px;
+}
+
+main .images .solid {
+    height:1px; 
+    width:90%; 
+    border-width:0; 
+    background-color:lightgray;
+}
+
+main .try-for-free .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0;
+}
+
+/* Footer */
+
+footer li {
+    list-style: none;
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.footer-nav img {
+    flex-basis: 100%;
+    height: 40px;
+    text-align: start;
+}
+
+.footer-nav ul li:first-child {
+    color:rgb(80, 78, 78);
     font-weight: bold;
-    background-color: white;
-    border: #192592 solid 1px;
+}
+
+.footer-nav ul {
+    min-width: 140px;
+    margin: 20px;
+    padding: 0;
+    line-height: 30px;
 }
 
 @media only screen and (min-width: 768px) {
