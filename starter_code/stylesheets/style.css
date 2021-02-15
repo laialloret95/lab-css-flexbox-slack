@@ -15,6 +15,33 @@ html {
     margin: 30px;
 }
 
+button {
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 5px;
+    height: 60px;
+    font-size: 1.2rem;
+}
+
+.signin {
+    display: flex;
+    flex-direction: column;
+}
+
+.signin input, button {
+    padding: 10px;
+}
+
+.signin input {
+    font: inherit;
+    margin-bottom: 10px;
+}
+
+.signin button {
+    background-color: #192592;
+    color: white;
+}
+
 /* Navbar */
 nav img {
     height: 40px;
@@ -40,27 +67,6 @@ header br{
     border-bottom: 10px solid transparent; 
 }
 
-header .signin {
-    display: flex;
-    flex-direction: column;
-}
-
-header .signin input, button {
-    padding: 10px;
-}
-
-header .signin input {
-    font: inherit;
-    margin-bottom: 10px;
-}
-
-header .signin button {
-    background-color: #192592;
-    color: white;
-    border-radius: 5px;
-    font: inherit;
-    border: none;
-}
 
 header .cta {
     text-align: center;
@@ -68,6 +74,31 @@ header .cta {
 
 header img {
     text-align: center;
+}
+
+/* Main Section */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main img {
+    max-width: 100px;
+}
+
+main .good-company {
+    text-align: center;
+}
+
+main button {
+    width: 95%;
+    color: #192592;
+    font-weight: bold;
+    background-color: white;
+    border: #192592 solid 1px;
 }
 
 @media only screen and (min-width: 768px) {
