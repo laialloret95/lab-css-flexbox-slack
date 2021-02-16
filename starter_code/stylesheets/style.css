@@ -14,8 +14,7 @@ html {
     line-height: 25px;
     color: #5b5e6d;
     padding-top: 65px; 
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10;
 }
 
 button {
@@ -67,12 +66,22 @@ nav {
     position: fixed;
     background-color: white;
     top: 0;
-    width: 100%;
     height: 60px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: lightgray 1px solid;
+    margin:0;
 }
 
 nav img {
     height: 50px;
+}
+
+nav .nav-bars {
+    height: 40px;
+    margin-right: 60px;
 }
 
 nav ul {
@@ -303,5 +312,31 @@ footer img {
 
     .last-footer .social-media {
         flex-basis: 5%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        justify-content: space-around;
+    }
+
+    nav .nav-bars {
+        display: none
+    }
+
+    nav ul {
+        flex-basis: 50%;
+    }
+
+    nav ul li {
+        padding: 5px;
+    }
+
+    nav ul li:last-child {
+        border: 1px solid #5b5e6d;
+        border-radius: 5%;
     }
 }
