@@ -118,17 +118,17 @@ main .images {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 main .images img {
-    max-width: 50%;
-    flex-basis: 100%;
-    margin: 40px;
+    max-width: 275px;
+    padding: 40px;
 }
 
 main .images .solid {
     height:1px; 
-    width:90%; 
+    width: 90%; 
     border-width:0; 
     background-color:lightgray;
 }
@@ -231,4 +231,11 @@ footer img {
         flex-direction: row;
         width: 90%;
     }
+
+    main .images {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
 }
